@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bookshelf Apps</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bookshelf Apps</h1>
+    </header>
+
+    <main>
+      <!-- Tambah Buku -->
+      <section class="input-book">
+        <form action="" id="formAddBook">
+          <label for="bookTitle">Judul Buku</label> <br />
+          <input type="text" id="inputBookTitle" required /> <br />
+          <label for="author">Penulis</label> <br />
+          <input type="type" id="inputAuthor" required /> <br />
+          <label for="year">Tahun</label> <br />
+          <input type="type" id="inputYear" required /> <br />
+          <input type="checkbox" id="isCompleted" />
+          <label for="checkStatus">Selesai</label>
+          <button type="submit">Tambah Buku</button>
+        </form>
+      </section>
+
+      <!-- Fitur Cari -->
+      <section class="search-book">
+        <form action="" id="formSearchbook">
+          <input type="text" id="searchBookTitle" placeholder="Cari Judul Buku" />
+          <button type="submit" class="button-search" id="buttonSearch">Cari</button>
+        </form>
+      </section>
+
+      <section class="progress">
+        <!-- Belum Selesai Dibaca -->
+        <div class="progress-book">
+          <h3>Belum Selesai Dibaca</h3>
+          <article id="processedReading"></article>
+        </div>
+
+        <!-- Selesai Dibaca -->
+        <div class="progress-book">
+          <h3>Selesai Dibaca</h3>
+          <article id="completedReading"></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; Bookshelf Apps 2022</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
